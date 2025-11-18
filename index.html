@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game.action_ai - آموزش هوش مصنوعی با تم رباتیک</title>
+    <meta name="description" content="یادگیری مبانی هوش مصنوعی با تمرین‌ها و پروژه‌های عملی">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="robot-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="12" cy="14" r="2" fill="currentColor"/>
+                        <circle cx="20" cy="14" r="2" fill="currentColor"/>
+                        <rect x="14" y="18" width="4" height="2" rx="1" fill="currentColor"/>
+                        <line x1="8" y1="6" x2="8" y2="4" stroke="currentColor" stroke-width="2"/>
+                        <line x1="16" y1="6" x2="16" y2="4" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="8" cy="4" r="1" fill="currentColor"/>
+                        <circle cx="16" cy="4" r="1" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="brand-text">game.action_ai</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">خانه</a>
+                <a href="#courses" class="nav-link">دوره‌ها</a>
+                <a href="#projects" class="nav-link">پروژه‌ها</a>
+                <a href="#videos" class="nav-link">ویدیوها</a>
+                <a href="#about" class="nav-link">درباره</a>
+            </div>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">آموزش هوش مصنوعی با تم رباتیک</h1>
+                    <p class="hero-subtitle">یادگیری مبانی هوش مصنوعی از سطح متوسط تا پیشرفته با تمرین‌های عملی و پروژه‌های واقعی</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary">شروع یادگیری</button>
+                        <button class="btn btn-secondary">مشاهده دوره‌ها</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-robot.png" alt="Robot teaching AI" class="hero-robot-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">دوره آموزشی</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">دانشجو</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">پروژه عملی</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">دوره‌های آموزشی</h2>
+                <p class="section-subtitle">مجموعه‌ای کامل از دوره‌های هوش مصنوعی برای سطح متوسط</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-ml.jpg" alt="Machine Learning">
+                        <div class="course-level">متوسط</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">یادگیری ماشین پیشرفته</h3>
+                        <p class="course-description">آشنایی با الگوریتم‌های پیشرفته یادگیری ماشین و پیاده‌سازی آن‌ها</p>
+                        <div class="course-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">TensorFlow</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration">۸ هفته</span>
+                            <span class="lessons">۲۴ درس</span>
+                        </div>
+                        <button class="btn btn-outline">شروع دوره</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-dl.jpg" alt="Deep Learning">
+                        <div class="course-level">متوسط</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">شبکه‌های عصبی عمیق</h3>
+                        <p class="course-description">ساخت و آموزش شبکه‌های عصبی برای حل مسائل پیچیده</p>
+                        <div class="course-tags">
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">CNN</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration">۱۰ هفته</span>
+                            <span class="lessons">۳۰ درس</span>
+                        </div>
+                        <button class="btn btn-outline">شروع دوره</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-nlp.jpg" alt="Natural Language Processing">
+                        <div class="course-level">متوسط</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">پردازش زبان طبیعی</h3>
+                        <p class="course-description">تحلیل و پردازش متون با تکنیک‌های مدرن NLP</p>
+                        <div class="course-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">BERT</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration">۶ هفته</span>
+                            <span class="lessons">۱۸ درس</span>
+                        </div>
+                        <button class="btn btn-outline">شروع دوره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">پروژه‌های عملی</h2>
+                <p class="section-subtitle">پروژه‌های واقعی برای تقویت مهارت‌های عملی شما</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-chatbot.jpg" alt="Chatbot Project">
+                        <div class="project-category">NLP</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ساخت چت‌بات هوشمند</h3>
+                        <p class="project-description">طراحی و پیاده‌سازی یک چت‌بات با قابلیت درک زبان طبیعی</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">مشاهده کد</a>
+                            <a href="#" class="project-link">راهنما</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-vision.jpg" alt="Computer Vision Project">
+                        <div class="project-category">Computer Vision</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">تشخیص اشیا با OpenCV</h3>
+                        <p class="project-description">سیستم تشخیص و ردیابی اشیا در تصاویر و ویدیو</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">مشاهده کد</a>
+                            <a href="#" class="project-link">راهنما</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-recommendation.jpg" alt="Recommendation System">
+                        <div class="project-category">ML</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">سیستم توصیه فیلم</h3>
+                        <p class="project-description">ساخت سیستم توصیه شخصی‌سازی شده با الگوریتم‌های collaborative filtering</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Surprise</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">مشاهده کد</a>
+                            <a href="#" class="project-link">راهنما</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">کتابخانه ویدیوها</h2>
+                <p class="section-subtitle">مجموعه‌ای از ویدیوهای آموزشی با کیفیت بالا</p>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-ml-basics.jpg" alt="ML Basics Video">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                        </div>
+                        <div class="video-duration">۱۵:۳۰</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">مبانی یادگیری ماشین</h3>
+                        <p class="video-description">آشنایی با مفاهیم پایه یادگیری ماشین و انواع الگوریتم‌ها</p>
+                        <div class="video-meta">
+                            <span class="video-views">۱۲٬۵۰۰ بازدید</span>
+                            <span class="video-date">۳ روز پیش</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-neural-networks.jpg" alt="Neural Networks Video">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                        </div>
+                        <div class="video-duration">۲۲:۴۵</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">شبکه‌های عصبی در عمل</h3>
+                        <p class="video-description">پیاده‌سازی اولین شبکه عصبی با TensorFlow</p>
+                        <div class="video-meta">
+                            <span class="video-views">۸٬۲۰۰ بازدید</span>
+                            <span class="video-date">۱ هفته پیش</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/video-robotics.jpg" alt="Robotics Video">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                        </div>
+                        <div class="video-duration">۱۸:۱۵</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">رباتیک و هوش مصنوعی</h3>
+                        <p class="video-description">ترکیب روباتیک با هوش مصنوعی برای ساخت روبات‌های هوشمند</p>
+                        <div class="video-meta">
+                            <span class="video-views">۱۵٬۸۰۰ بازدید</span>
+                            <span class="video-date">۲ هفته پیش</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">درباره game.action_ai</h2>
+                    <p class="about-description">
+                        game.action_ai یک پلتفرم آموزشی پیشرفته برای یادگیری هوش مصنوعی است که با ترکیب تئوری و عمل، 
+                        دانشجویان را برای ورود به دنیای هوش مصنوعی آماده می‌کند. ما بر این باوریم که بهترین راه یادگیری 
+                        از طریق پروژه‌های عملی و تمرین‌های تعاملی است.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>آموزش عملی و پروژه محور</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>اساتید مجرب و متخصص</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>به‌روزرسانی مداوم محتوا</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-robot.png" alt="About AI Robot" class="about-robot-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="robot-icon">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="12" cy="14" r="2" fill="currentColor"/>
+                                <circle cx="20" cy="14" r="2" fill="currentColor"/>
+                                <rect x="14" y="18" width="4" height="2" rx="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="footer-brand-text">game.action_ai</span>
+                    </div>
+                    <p class="footer-description">پلتفرم آموزشی هوش مصنوعی با تم رباتیک</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">دوره‌ها</h4>
+                        <a href="#" class="footer-link">یادگیری ماشین</a>
+                        <a href="#" class="footer-link">شبکه‌های عصبی</a>
+                        <a href="#" class="footer-link">پردازش زبان</a>
+                        <a href="#" class="footer-link">بینایی ماشین</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">پروژه‌ها</h4>
+                        <a href="#" class="footer-link">چت‌بات</a>
+                        <a href="#" class="footer-link">تشخیص تصویر</a>
+                        <a href="#" class="footer-link">سیستم توصیه</a>
+                        <a href="#" class="footer-link">پردازش متن</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">پشتیبانی</h4>
+                        <a href="#" class="footer-link">راهنما</a>
+                        <a href="#" class="footer-link">انجمن</a>
+                        <a href="#" class="footer-link">تماس با ما</a>
+                        <a href="#" class="footer-link">سوالات متداول</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 game.action_ai. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
